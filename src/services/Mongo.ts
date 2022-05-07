@@ -34,15 +34,17 @@ export default class Mongo {
     }
   }
 
-  async createUser(username: string) {
+  async createUser(username: string): Promise<string> {
     const collection = await this.client.db(dbName).collection(usersCollection);
     try {
-      await collection.insertOne({
+      const result = await collection.insertOne({
         displayName: username,
         name: username,
       });
+      return result.insertedId.toString();
     } catch (error) {
       console.error(error);
     }
+    return '';
   }
 }
