@@ -33,11 +33,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/body-parser", "npm:1.19.2"],\
             ["@types/cors", "npm:2.8.12"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/node", "npm:17.0.31"],\
             ["@typescript-eslint/eslint-plugin", "virtual:ffa34902ad4d930c022c003f69b47c38ee5ce91a66b09cf9a5eec8ca498d51ffef3962a6a13bce5730f15afbb99fb07f628818e48f78b7691a8ab0fb536b6e44#npm:5.22.0"],\
             ["@typescript-eslint/parser", "virtual:ffa34902ad4d930c022c003f69b47c38ee5ce91a66b09cf9a5eec8ca498d51ffef3962a6a13bce5730f15afbb99fb07f628818e48f78b7691a8ab0fb536b6e44#npm:5.22.0"],\
+            ["base64-js", "npm:1.5.1"],\
+            ["body-parser", "npm:1.20.0"],\
+            ["cbor", "npm:8.1.0"],\
             ["concurrently", "npm:7.1.0"],\
             ["cors", "npm:2.8.5"],\
             ["eslint", "npm:8.15.0"],\
@@ -2403,6 +2407,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001338-0f5d19b25f-80ac481b20.zip/node_modules/caniuse-lite/",\
           "packageDependencies": [\
             ["caniuse-lite", "npm:1.0.30001338"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cbor", [\
+        ["npm:8.1.0", {\
+          "packageLocation": "./.yarn/cache/cbor-npm-8.1.0-c1a4d6266a-a90338435d.zip/node_modules/cbor/",\
+          "packageDependencies": [\
+            ["cbor", "npm:8.1.0"],\
+            ["nofilter", "npm:3.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5865,6 +5879,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["nofilter", [\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/nofilter-npm-3.1.0-3c5ba47d92-58aa85a5b4.zip/node_modules/nofilter/",\
+          "packageDependencies": [\
+            ["nofilter", "npm:3.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["nopt", [\
         ["npm:1.0.10", {\
           "packageLocation": "./.yarn/cache/nopt-npm-1.0.10-f3db192976-f62575acea.zip/node_modules/nopt/",\
@@ -6154,11 +6177,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["passwordless-server", "workspace:."],\
+            ["@types/body-parser", "npm:1.19.2"],\
             ["@types/cors", "npm:2.8.12"],\
             ["@types/express", "npm:4.17.13"],\
             ["@types/node", "npm:17.0.31"],\
             ["@typescript-eslint/eslint-plugin", "virtual:ffa34902ad4d930c022c003f69b47c38ee5ce91a66b09cf9a5eec8ca498d51ffef3962a6a13bce5730f15afbb99fb07f628818e48f78b7691a8ab0fb536b6e44#npm:5.22.0"],\
             ["@typescript-eslint/parser", "virtual:ffa34902ad4d930c022c003f69b47c38ee5ce91a66b09cf9a5eec8ca498d51ffef3962a6a13bce5730f15afbb99fb07f628818e48f78b7691a8ab0fb536b6e44#npm:5.22.0"],\
+            ["base64-js", "npm:1.5.1"],\
+            ["body-parser", "npm:1.20.0"],\
+            ["cbor", "npm:8.1.0"],\
             ["concurrently", "npm:7.1.0"],\
             ["cors", "npm:2.8.5"],\
             ["eslint", "npm:8.15.0"],\
