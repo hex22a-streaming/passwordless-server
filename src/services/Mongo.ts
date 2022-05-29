@@ -1,18 +1,20 @@
-import {Document, MongoClient, ObjectId, WithId} from 'mongodb';
+import {
+  Document, MongoClient, ObjectId, WithId,
+} from 'mongodb';
 import * as Buffer from 'buffer';
 
-const dbName = 'passwordless';
-const usersCollection = 'users';
+export const uri = 'mongodb://root:example@localhost:27017/?authMechanism=DEFAULT';
+export const dbName = 'passwordless';
+export const usersCollection = 'users';
 
 export default class Mongo {
-  private client: MongoClient;
+  client: MongoClient;
 
   constructor() {
-    const uri = 'mongodb://root:example@localhost:27017/?authMechanism=DEFAULT';
     this.client = new MongoClient(uri);
   }
 
-  async connect() {
+  async connect(): Promise<void> {
     try {
       await this.client.connect();
       await this.client.db('admin').command({ ping: 1 });

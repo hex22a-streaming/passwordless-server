@@ -3,6 +3,7 @@
   "packageManager": "yarn@3.2.0",
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.1",
     "@types/node": "^17.0.31",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -14,6 +15,8 @@
     "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.0",
     "nodemon": "^2.0.16",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
     "typescript": "^4.6.4"
   },
   "dependencies": {
@@ -28,6 +31,7 @@
     "nanoid": "^3.3.4"
   },
   "scripts": {
+    "test": "jest",
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/index.js\""
